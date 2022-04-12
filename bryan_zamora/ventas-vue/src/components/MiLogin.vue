@@ -1,7 +1,36 @@
-.principal{
+<template>
+ <div class="principal">
+    <div class="login">
+        <div class="login-img">
+            <img src="../assets/img/gohan.jpg">
+        </div>
+        <h1>Iniciar Sesión ¡Bienvenido!</h1>
+        <form>
+            <label for="txt-usuario">Usuario</label>
+            <input type="text" name="txt-usuario"><br>
+            <label for="txt-password">Password</label>
+            <input type="password" name="txt-password"><br>
+            <input type="submit" name="login" value="Iniciar sesión"><br>
+        </form>
+    </div>
+</div>
+
+</template>
+
+<script>
+export default {
+  name: 'MiLogin',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<style>
+  .principal{
     width: 100%;
     height: 100%;
-    background-image: url("../../../assets/img/goku.jpg");  
+    background-image: url("../assets/img/goku.jpg");  
     background-repeat: no-repeat;
     background-size: 100% auto;
     position: fixed;
@@ -78,3 +107,5 @@ img{
     border-radius: 40px;
     margin: 0px auto;
 }
+</style>
+
